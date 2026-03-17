@@ -23,7 +23,7 @@ def keep_alive():
     import time, urllib.request
     while True:
         try:
-            urllib.request.urlopen("https://escenarios.onrender.com/")
+            urllib.request.urlopen("https://eventosfuturos.onrender.com/")
         except:
             pass
         time.sleep(840)
