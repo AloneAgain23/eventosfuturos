@@ -71,7 +71,7 @@ async def generate_radar(request: Request):
         "expires": datetime.utcnow() + timedelta(hours=SESSION_TTL_HOURS),
     }
 
-    BASE_URL = "https://TU-RADAR-APP.onrender.com"
+    BASE_URL = "https://eventosfuturos.onrender.com"
     view_url = f"{BASE_URL}/view/{session_id}"
 
     return JSONResponse({
