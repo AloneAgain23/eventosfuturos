@@ -23,7 +23,7 @@ def keep_alive():
     import time, urllib.request
     while True:
         try:
-            urllib.request.urlopen("https://eventosfuturos.onrender.com/")
+            urllib.request.urlopen("https://eventosfuturos-ntf4.onrender.com/")
         except:
             pass
         time.sleep(840)
@@ -71,7 +71,7 @@ async def generate_radar(request: Request):
         "expires": datetime.utcnow() + timedelta(hours=SESSION_TTL_HOURS),
     }
 
-    BASE_URL = "https://eventosfuturos.onrender.com"
+    BASE_URL = "https://eventosfuturos-ntf4.onrender.com"
     view_url = f"{BASE_URL}/view/{session_id}"
 
     return JSONResponse({
